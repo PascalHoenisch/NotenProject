@@ -34,7 +34,7 @@
             android:id="@+id/Tree"
             android:layout_width="304dp"
             android:layout_height="432dp"
-            android:src="@drawable/tree"
+            android:src="@drawable/noteprojectsign2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
