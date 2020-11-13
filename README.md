@@ -6,3 +6,5 @@ Backend services zur Verwaltung der Daten und Bandmitglieder.
 Minimum SDK Android (Oreo) 6.0
 
 Derzeit noch in Entwicklung!
+
+![](https://i.imgur.com/bLfPmcf.png)
