@@ -1,4 +1,4 @@
-package com.example.notesproject;
+package com.example.notesproject.GUI;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.example.notesproject.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,10 +18,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button tree = (Button) findViewById(R.id.Tree);
 
+
         tree.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
+
+                /*
                 Context context = getApplicationContext();
                 CharSequence text = "Achtung sinnlos!";
                 int duration = Toast.LENGTH_SHORT;
@@ -29,7 +33,13 @@ public class MainActivity extends AppCompatActivity {
                 toast.setGravity(Gravity.TOP|Gravity.LEFT, 250, 120);
 
                 toast.show();
+                 */
+
+                GUILogin gui = new GUILogin(MainActivity.this);
+                gui.init();
+
             }
         });
+
     }
 }
