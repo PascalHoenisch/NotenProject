@@ -14,7 +14,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="100dp"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.100000024"/>
 
     <TextView
             android:text="Username:"
@@ -25,7 +26,9 @@
             app:layout_constraintTop_toBottomOf="@+id/app_title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/input_username"
-            android:layout_marginEnd="25dp"/>
+            android:layout_marginEnd="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
 
     <TextView
             android:text="Password:"
@@ -96,6 +99,8 @@
             android:layout_marginTop="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.75"/>
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.050000012"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -53,7 +53,7 @@
     <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:srcCompat="@android:drawable/ic_menu_report_image"
+            app:srcCompat="@drawable/sample_sheet"
             android:id="@+id/image_view_pdf"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
