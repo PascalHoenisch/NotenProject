@@ -7,30 +7,34 @@
         >
 
     <Button
-            android:text="Back"
+            android:text="prev"
             android:layout_width="@dimen/corner_button_size"
             android:layout_height="@dimen/corner_button_size"
-            android:id="@+id/back"
+            android:id="@+id/prevPage"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
     <Button
-            android:text="..."
+            android:text="next"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/corner_button_size"
-            android:id="@+id/options"
+            android:id="@+id/nextPage"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
     <TextView
             android:text="@string/cur_song_name"
             android:layout_width="0dp"
             android:layout_height="@dimen/corner_button_size"
             android:id="@+id/song_name"
-            app:layout_constraintEnd_toStartOf="@+id/options"
-            app:layout_constraintStart_toEndOf="@+id/back"
+            app:layout_constraintEnd_toStartOf="@+id/nextPage"
+            app:layout_constraintStart_toEndOf="@+id/prevPage"
             app:layout_constraintHorizontal_bias="0.361"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:gravity="center"/>
 
     <SeekBar
             android:layout_width="0dp"

@@ -1,11 +1,8 @@
 package com.example.notesproject.GUI;
 
-import android.content.Context;
 import android.content.Intent;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.example.notesproject.R;
@@ -16,7 +13,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button tree = (Button) findViewById(R.id.Tree);
+        Button tree = findViewById(R.id.Tree);
+        final AppCompatActivity that = this;
+
+        //TODO Delete Later:
+        //Song.clearSongList(this);
 
 
         tree.setOnClickListener(new View.OnClickListener() {
@@ -35,8 +36,15 @@ public class MainActivity extends AppCompatActivity {
                 toast.show();
                  */
 
+                /*
                 GUILogin gui = new GUILogin(MainActivity.this);
                 gui.init();
+                 */
+
+
+
+                Intent intent = new Intent(that, GUILogin.class);
+                startActivity(intent);
 
             }
         });

@@ -1,38 +1,37 @@
 package com.example.notesproject.GUI;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.notesproject.R;
 
-public class GUILogin extends GUI{
-
-
-    public GUILogin(AppCompatActivity app) {
-        super(app);
-    }
+public class GUILogin extends AppCompatActivity {
+    final AppCompatActivity that = this;
 
     @Override
-    public void init() {
-        app.setContentView(R.layout.login_screen);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.login_screen);
 
 
-        Button register = (Button) app.findViewById(R.id.button_register);
+        Button register = findViewById(R.id.button_register);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                GUIRegister gui = new GUIRegister(app);
-                gui.init();
+                Intent intent = new Intent(that, GUIRegister.class);
+                startActivity(intent);
             }
         });
 
 
-        Button login = (Button) app.findViewById(R.id.button_login);
+        Button login = findViewById(R.id.button_login);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                GUISongList gui = new GUISongList(app);
-                gui.init();
+                Intent intent = new Intent(that, GUISongList.class);
+                startActivity(intent);
             }
         });
 

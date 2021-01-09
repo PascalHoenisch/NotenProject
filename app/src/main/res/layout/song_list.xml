@@ -5,22 +5,16 @@
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent">
 
-    <ImageView
-            android:layout_width="@dimen/corner_button_size"
-            android:layout_height="@dimen/corner_button_size"
-            app:srcCompat="@android:drawable/ic_menu_sort_by_size"
-            android:id="@+id/menu"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
-
     <TextView
             android:text="@string/band_name"
             android:layout_width="0dp"
             android:layout_height="@dimen/corner_button_size"
             android:id="@+id/band_name"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/menu"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/newSong"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
     <ScrollView
             android:layout_width="0dp"
@@ -37,5 +31,14 @@
                 android:orientation="vertical"
                 android:id="@+id/songlist_list"/>
     </ScrollView>
+
+    <Button
+            android:text="+"
+            android:layout_width="@dimen/corner_button_size"
+            android:layout_height="@dimen/corner_button_size"
+            android:id="@+id/newSong"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
